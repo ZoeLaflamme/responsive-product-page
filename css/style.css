@@ -45,28 +45,105 @@ nav ul {
   font-variant: var(--font-size-md);
 }
 
-img {
-display: block;
-border-radius: 1%;
-max-width: 100%;
+/* fuck around with it later */
+
+.grid1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 
-body {
+.first img {
+  padding: 1%;
+  max-width: 100%;
+}
+
+/* #grid1 {
+  display: grid;
+  grid-template-areas: 
+  "pic1 pic1 pic1"
+  "pic2 pic3 pic4";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .7fr .3fr;
+  gap: 3em;
+  margin-bottom: 2em;
+  }
+
+#pic1 {
+  grid-area: pic1;
+  width: 100%;
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+#pic2 {
+
+  grid-area: pic2;
+  width: 100%;
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+#pic3 {
+  grid-area: pic3;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+#pic4 {
+  grid-area: pic4;
+  width: 100%;
+  border-radius: 1em;
+  object-fit: cover;
+} */
+
+#text-header {
+  font-size: var(--font-size-xl);
+  font-weight: normal;
   margin: 0;
 }
 
-.grid1 {
+#le {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+/* .price {
 
-  /* width: 40%;
-  flex-wrap: wrap;
-  flex-wrap: 1fr 1fr;
-  justify-content: center;
-  border-radius: 2%;
-  padding-left: 10%; */
+} */
+
+/* #vtext {
+
+} */
+
+button {
+  background-color: black;
+  color: #fff;
+  padding-top: .75em;
+  padding-bottom: .75em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-radius: .5em;
+  font-size: var(--font-size-base);
+}
+
+.history h1 {
+  text-align: center;
+}
+
+.review h1 {
+text-align: center;
+}
+
+.review p {
+margin: 1em;
+}
+
+.names {
+  font-style: italic;
 }
 
 .review {
@@ -74,39 +151,57 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
   color: #fff;
 }
 
-.review h3 {
+.review-people {
+  display: block;
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+.grid2 h1 {
   text-align: center;
+  font-size: var(--font-size-lg);
 }
 
-#review-people {
-display: grid;
-grid-template-rows: 1fr 1fr 1fr;
-}
-
-/* #review-people {
-display: grid;
-grid-template-rows:auto;
-width: 20%;
-padding-left: 30%;
-padding-right: 30%;
-} */
-
-.suggestion {
+.grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px
+  gap: 2em;
 }
 
-.suggestion > h3 {
-  text-align: center;
+.flavours {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2em;
 }
 
-@media (min-width: 25em) {
-  .grid2 {
-    display: grid;
-    grid-template-areas: "1" "2" "3" "4";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+.products img {
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.products {
+  display: grid;
+  grid-template-rows: .5fr .25fr .25fr ;
+}
+
+
+@media (min-width: 960px) {
+header .inner-content {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.grid1 {
+  grid-template-areas: "pic1" "pic2" "pic3" "pic4";
+  gap: 1em;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
 }
 
 footer {
