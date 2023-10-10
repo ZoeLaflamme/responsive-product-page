@@ -45,21 +45,7 @@ nav ul {
   font-variant: var(--font-size-md);
 }
 
-/* fuck around with it later */
-
-.grid1 {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-
-
-.first img {
-  padding: 1%;
-  max-width: 100%;
-}
-
-/* #grid1 {
+ #grid1 {
   display: grid;
   grid-template-areas: 
   "pic1 pic1 pic1"
@@ -98,7 +84,7 @@ nav ul {
   width: 100%;
   border-radius: 1em;
   object-fit: cover;
-} */
+}
 
 #text-header {
   font-size: var(--font-size-xl);
@@ -110,14 +96,6 @@ nav ul {
   text-transform: uppercase;
   font-weight: bold;
 }
-
-/* .price {
-
-} */
-
-/* #vtext {
-
-} */
 
 button {
   background-color: black;
@@ -199,8 +177,6 @@ header .inner-content {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
-
-
 
 }
 
